@@ -1,4 +1,4 @@
-let timeLeft = 15;
+let timeLeft = 30;
 const timerEl = document.getElementById("timer");
 const circle = document.querySelector(".progress-ring__circle");
 const circumference = 2 * Math.PI * 60;
@@ -6,7 +6,7 @@ const circumference = 2 * Math.PI * 60;
 circle.style.strokeDasharray = circumference;
 
 function setProgress(time) {
-    const offset = circumference - (time / 15) * circumference;
+    const offset = circumference - (time / 30) * circumference;
     circle.style.strokeDashoffset = offset;
 }
 
